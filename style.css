@@ -52,6 +52,62 @@ nav {
   margin: 0 10%;
 }
 
+.searchbar__container {
+  position: relative;
+}
+
+.searchbar {
+  background-color: #fafafa;
+  outline: none;
+  border-radius: 4px;
+  border-style: solid;
+  border-color: #dbdbdb;
+  border-width: 1px;
+  padding: 6px;
+  width: 202px;
+  text-indent: 22px;
+}
+
+.searchbar::placeholder {
+  color: transparent;
+}
+
+.searchbar:focus::placeholder {
+  color: #989898;
+}
+
+.search__icon {
+  background-image: url("assets/magnifier.png");
+  background-size: cover;
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  margin: 1px;
+  position: absolute;
+  left: 32%;
+  filter: invert(0.5);
+}
+
+.search__text {
+  color: #989898;
+  position: absolute;
+  left: 40%;
+}
+
+.bar-top {
+  position: absolute;
+  z-index: 1;
+  background-color: transparent;
+}
+
+.bar-top:focus ~ .search__text {
+  transform: translateX(calc(100vw));
+}
+
+.bar-top:focus ~ .search__icon {
+  transform: translateX(-600%);
+}
+
 button {
   background-color: #0095f6;
   color: #ffffff;
@@ -82,60 +138,12 @@ button {
   transition: 0.2s ease-in-out;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
+  .logo {
+    display: none;
+  }
+
   .searchbar__container {
-    position: relative;
-  }
-
-  .searchbar {
-    background-color: #fafafa;
-    outline: none;
-    border-radius: 4px;
-    border-style: solid;
-    border-color: #dbdbdb;
-    border-width: 1px;
-    padding: 6px;
-    width: 202px;
-    text-indent: 22px;
-  }
-
-  .searchbar::placeholder {
-    color: transparent;
-  }
-
-  .searchbar:focus::placeholder {
-    color: #989898;
-  }
-
-  .search__icon {
-    background-image: url("assets/magnifier.png");
-    background-size: cover;
-    display: inline-block;
-    height: 10px;
-    width: 10px;
-    margin: 1px;
-    position: absolute;
-    left: 32%;
-    filter: invert(0.5);
-  }
-
-  .search__text {
-    color: #989898;
-    position: absolute;
-    left: 40%;
-  }
-
-  .bar-top {
-    position: absolute;
-    z-index: 1;
-    background-color: transparent;
-  }
-
-  .bar-top:focus ~ .search__text {
-    transform: translateX(calc(100vw));
-  }
-
-  .bar-top:focus ~ .search__icon {
-    transform: translateX(-600%);
+    display: none;
   }
 }
