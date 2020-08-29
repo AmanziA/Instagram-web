@@ -116,11 +116,12 @@ button {
   cursor: pointer;
   border-radius: 4px;
   font-weight: 600;
+  padding: 4px 12px;
+  font-size: 14px;
 }
 
 .nav-button {
   margin: 0 2px;
-  padding: 5px 10px;
 }
 
 .signup {
@@ -128,7 +129,7 @@ button {
   color: #0095f6;
 }
 
-.login:focus {
+button:focus {
   background-color: #aee5f9;
   transition: 0.2s ease-in-out;
 }
@@ -138,6 +139,96 @@ button {
   transition: 0.2s ease-in-out;
 }
 
+main {
+  max-width: 975px;
+  margin: auto;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.profile {
+  padding: 30px 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile__picture__container {
+  width: calc(100% / 3);
+}
+
+.profile__picture__ratio {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  margin: auto;
+}
+
+.profile__picture {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.profile__description__container {
+  width: calc(100% / 3 * 2);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.profile__title {
+  display: flex;
+  align-items: center;
+  margin: 0 0 20px;
+}
+
+h1 {
+  margin: 0;
+  font-weight: 300;
+}
+
+.button__follow {
+  margin-left: 20px;
+}
+
+.profile__info {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin: 0 0 20px;
+}
+
+li {
+  margin-right: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: #416990;
+  font-weight: 600;
+}
+
+.profile__info__link {
+  display: flex;
+  align-items: center;
+  color: #000000;
+  font-weight: inherit;
+}
+
+h2 {
+  font-size: 16px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.info__title {
+  margin-left: 4px;
+}
+
+p {
+  margin: 0;
+}
+
 @media screen and (max-width: 767px) {
   .logo {
     display: none;
@@ -145,5 +236,35 @@ button {
 
   .searchbar__container {
     display: none;
+  }
+
+  .profile__picture__ratio {
+    height: 76px;
+    width: 76px;
+    margin: inherit;
+  }
+
+  .profile__title {
+    display: block;
+  }
+
+  .button__follow {
+    margin: 14px 0 0;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .profile__info {
+    display: none;
+  }
+
+  .profile__description {
+    position: absolute;
+    top: 190px;
+    left: 20px;
+    font-size: 14px;
+    line-height: 20px;
   }
 }
