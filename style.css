@@ -12,6 +12,8 @@ body {
 nav {
   background-color: #ffffff;
   width: 100%;
+  position: fixed;
+  z-index: 1;
 }
 
 .nav-bar {
@@ -144,7 +146,7 @@ main {
   margin: auto;
   font-size: 16px;
   line-height: 24px;
-  padding: 30px 20px 0;
+  padding: 84px 20px 0;
   box-sizing: border-box;
 }
 
@@ -260,6 +262,11 @@ p {
   border-top: solid 1px #000000;
 }
 
+.icon__container {
+  display: flex;
+  align-items: center;
+}
+
 .icon {
   height: 12px;
   width: 12px;
@@ -273,6 +280,7 @@ p {
   font-weight: 400;
   font-size: 12px;
   letter-spacing: 1px;
+  margin-left: 6px;
 }
 
 #text-tagged {
@@ -314,6 +322,14 @@ article {
     display: none;
   }
 
+  main {
+    padding: 54px 0 0 0;
+  }
+
+  .profile {
+    padding: 30px 20px 0;
+  }
+
   .profile__picture__ratio {
     height: 76px;
     width: 76px;
@@ -333,7 +349,32 @@ article {
   }
 
   .profile__info {
-    display: none;
+    position: absolute;
+    left: 0;
+    top: 312px;
+    border-top: solid 1px #dbdbdb;
+    padding: 12px 0;
+    width: 100%;
+  }
+
+  .profile__info__container {
+    width: calc(100% / 3);
+    margin: 0;
+  }
+
+  .profile__info__link {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    line-height: normal;
+  }
+
+  h2 {
+    font-size: 14px;
+  }
+
+  .info__title {
+    color: #989898;
   }
 
   .profile__description {
@@ -342,5 +383,44 @@ article {
     left: 20px;
     font-size: 14px;
     line-height: 20px;
+  }
+
+  .profile__photos {
+    margin-top: 206px;
+  }
+
+  .photos__menu {
+    height: 44px;
+  }
+
+  .photos__menu__container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .posts {
+    border-top: none;
+  }
+
+  .icon {
+    height: 24px;
+    width: 24px;
+  }
+
+  .icon__posts {
+    filter: none;
+  }
+
+  .photos__menu__text {
+    display: none;
+  }
+
+  .photos__row {
+    margin-bottom: 6px;
+  }
+
+  article {
+    width: calc(100% / 3 - 3px);
+    padding-top: calc(100% / 3 - 3px);
   }
 }
