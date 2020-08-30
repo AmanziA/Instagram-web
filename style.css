@@ -141,6 +141,119 @@ button:focus {
   transition: 0.2s ease-in-out;
 }
 
+.bottom__log__position {
+  backdrop-filter: blur(10px);
+  background-color: #000000;
+  opacity: 80%;
+  position: absolute;
+  width: 100%;
+  top: 88vh;
+  height: 72px;
+	padding: 20px 0;
+	display: flex;
+}
+
+.bottom__log__container {
+  width: calc(975px - 40px);
+  margin: auto;
+  display: flex;
+	justify-content: space-between;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+
+.bottom__container__left {
+  display: flex;
+  align-items: center;
+}
+
+.bottom__logo__ratio {
+  height: 52px;
+  width: 52px;
+  border-radius: 50%;
+  border: 2px white solid;
+  display: flex;
+  justify-content: center;
+	align-items: center;
+	margin-right: 12px;
+}
+
+.bottom__logo {
+  height: 56%;
+  width: 56%;
+}
+
+.bottom__text__container {
+  color: #ffffff;
+}
+
+.bottom__text__container span {
+	font-weight: 600;
+}
+
+.bottom__button__container {
+	display: flex;
+	flex-direction: column;
+}
+
+.bottom__button__container button{
+	width: 116px;
+	height: 30px;
+	padding: 4px 10px;
+}
+
+.bottom__singup {
+	background-color: transparent;
+	color: #0095f6;
+	margin-top: 2px;
+}
+
+.bottom__login:focus {
+	background-color: #00376b;
+}
+
+.bottom__singup:focus {
+	color: #00376b;
+	background-color: transparent;
+}
+
+.button__x {
+	background-image: url("assets/button-x.png");
+	height: 9px;
+	width: 9px;
+	background-size: contain;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	right: 10px;
+	top: 90vh;
+	filter: brightness(0.5);
+	z-index: 2;
+}
+
+.button__x:focus {
+	background-color: transparent;
+}
+
+.checkbox__x {
+	position: absolute;
+	right: 10px;
+	top: 89vh;
+	z-index: 3;
+opacity: 0;
+cursor: pointer;
+}
+
+.checkbox__x:checked ~ .bottom__log__position {
+	transform: translateX(calc(100vw));
+}
+
+.checkbox__x:checked ~ .button__x {
+	transform: translateX(calc(100vw));
+}
+
+
 main {
   max-width: 975px;
   margin: auto;
