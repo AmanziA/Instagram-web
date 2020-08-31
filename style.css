@@ -487,10 +487,6 @@ article {
   filter: brightness(2);
 }
 
-#modal__checkbox:checked ~ .modal__x {
-  transform: translateX(0);
-}
-
 .modal__page {
   position: absolute;
   height: 100%;
@@ -501,10 +497,6 @@ article {
   background-color: #000000;
   transform: translateX(calc(200vw));
   z-index: 2;
-}
-
-#modal__checkbox:checked ~ .modal__page {
-  transform: translateX(0);
 }
 
 .open__photo {
@@ -518,10 +510,6 @@ article {
   z-index: 2;
   left: calc((100% - 935px) / 2);
   display: flex;
-}
-
-#modal__checkbox:checked ~ .open__photo {
-  transform: translateX(0);
 }
 
 .modal__open__photo {
@@ -626,6 +614,18 @@ article {
 
 .modal__login__text {
   color: #989898;
+}
+
+#modal__checkbox:checked ~ .modal__x {
+  transform: translateX(0);
+}
+
+#modal__checkbox:checked ~ .modal__page {
+  transform: translateX(0);
+}
+
+#modal__checkbox:checked ~ .open__photo {
+  transform: translateX(0);
 }
 
 #modal__checkbox__close:checked ~ .modal__x {
@@ -780,6 +780,94 @@ article {
   }
 
   .hover__container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .open__photo {
+    width: calc(100vw - 40px);
+    left: auto;
+    margin: 0 20px;
+    height: calc(935px / 2);
+    top: calc(16vh);
+  }
+
+  .modal__open__photo {
+    width: calc(100% / 2);
+  }
+
+  .modal__right {
+    width: calc(100% / 2);
+  }
+  .modal__right__top p {
+    height: 180px;
+    overflow: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .open__photo {
+    top: 0;
+    margin: 0;
+    height: 120vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .modal__open__photo {
+    width: 100vw;
+    margin-top: 96px;
+    height: calc((100vh - 96px) / 2);
+  }
+
+  .modal__right {
+    box-sizing: border-box;
+    width: 100vw;
+    margin-top: 72px;
+  }
+
+  .modal__right__top p {
+    padding: 0;
+    height: 30vh;
+  }
+
+  .modal__list {
+    padding: 18px 20px;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    left: 0;
+    border: 0;
+  }
+
+  .modal__info {
+    border: 0;
+    padding: 0 0 4px;
+  }
+
+  .modal__buttons {
+    position: absolute;
+    top: calc(50vh + 48px);
+    padding: 12px 20px;
+    width: calc(100vw - 40px);
+    left: 0;
+  }
+
+  .modal__likes {
+    position: absolute;
+    left: 0;
+    padding: 0 20px;
+    width: 100vw;
+    top: calc(50vh + 94px);
+  }
+
+  .modal__date {
+    margin-bottom: 168px;
+  }
+
+  .modal__login {
     display: none;
   }
 }
