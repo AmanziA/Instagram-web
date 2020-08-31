@@ -67,8 +67,12 @@
                 </div>
               </div>
               <div class="bottom__button__container">
-                <button class="bottom__login">Log In</button>
-                <button class="bottom__singup">Sign Up</button>
+                <a href="https://www.instagram.com/accounts/login/">
+                  <button class="bottom__login">Log In</button>
+                </a>
+                <a href="https://www.instagram.com/accounts/emailsignup/">
+                  <button class="bottom__singup">Sign Up</button>
+                </a>
               </div>
             </div>
           </div>
@@ -79,6 +83,94 @@
     </header>
 
     <main>
+      <div class="modal">
+        <input type="checkbox" id="modal__checkbox" name="modal__checkbox" />
+        <input type="checkbox" name="x-close" id="modal__checkbox__close" />
+        <span class="modal__x">
+          <label for="modal__checkbox__close">
+            <img src="assets/button-x.png" alt="" />
+          </label>
+        </span>
+        <div class="modal__page"></div>
+        <div class="open__photo">
+          <img
+            src="assets/najbolja-slika.png"
+            alt="photo"
+            class="modal__open__photo"
+          />
+          <div class="modal__right">
+            <div class="modal__right__top">
+              <ul class="modal__list">
+                <li class="modal__picture__ratio">
+                  <img src="assets/dump_logo.jpg" alt="profile_picture" />
+                </li>
+                <li>dumpovci •</li>
+                <li>
+                  <button>Follow</button>
+                </li>
+              </ul>
+              <p>
+                Bila nam je iznimna čast sudjelovati na
+                <a href="#">@bug.hr</a> Future Show 2019 kao gosti na panelu pod
+                nazivom Ostati ili otići - developerska dilema u eri migracija .
+                DUMP je predstavljao naš <a href="#">@matej_rajcic</a> .
+                Atmosfera je bila odlična, a više dojmova uskoro😁
+                <br />
+                .
+                <br />
+                .
+                <br />
+                .
+                <br />
+                <a href="#">#bug</a>
+                <a href="#">#bughr</a>
+                <a href="#">#bugfutureshow</a>
+                <a href="#">#2k19</a>
+                <a href="#">#conference</a>
+                <a href="#">#panel</a>
+                <a href="#">#speaker</a>
+                <a href="#">#konferencija</a>
+                <a href="#">#technology</a>
+                <a href="#">#tech</a>
+                <a href="#">#tehnologija</a>
+                <a href="#">#developer</a>
+                <a href="#">#developers</a>
+                <a href="#">#programiranje</a>
+                <a href="#">#DUMP</a>
+                <a href="#">#udruga</a>
+                <a href="#">#programeri</a>
+                <a href="#">#zajednica</a>
+                <a href="#">#bfs2019</a>
+              </p>
+            </div>
+            <div class="modal__right__bottom">
+              <div class="modal__info">
+                <div class="modal__buttons">
+                  <div class="modal__buttons__left">
+                    <img src="assets/heart.png" alt="" />
+                    <img src="assets/comment.png" alt="" />
+                    <img src="assets/share_valjda.png" alt="" />
+                  </div>
+                  <div class="modal__buttons__right">
+                    <img src="assets/bookmark.png" alt="" />
+                  </div>
+                </div>
+                <span class="modal__likes">86 Likes</span>
+                <span class="modal__date">FEBRUARY 8</span>
+              </div>
+              <div class="modal__login">
+                <span class="modal__login__text">
+                  <a href="https://www.instagram.com/accounts/login/"
+                    >Log in
+                  </a>
+                  to like or comment.</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="profile">
         <div class="profile__picture__container">
           <div class="profile__picture__ratio">
@@ -141,7 +233,10 @@
       <div class="profile__photos">
         <div class="photos__menu">
           <div class="photos__menu__container">
-            <a href="" class="menu__option posts">
+            <a
+              href="https://www.instagram.com/dumpovci/"
+              class="menu__option posts"
+            >
               <span class="icon__container">
                 <img
                   src="assets/posts_icon.png"
@@ -151,7 +246,10 @@
                 <span class="photos__menu__text">POSTS</span>
               </span>
             </a>
-            <a href="" class="menu__option tagged">
+            <a
+              href="https://www.instagram.com/accounts/login/?next=%2Fdumpovci%2Ftagged%2F&source=profile_tagged_tab"
+              class="menu__option tagged"
+            >
               <span class="icon__container">
                 <img src="assets/tagged_icon.png" alt="tagged" class="icon" />
                 <span class="photos__menu__text" id="text-tagged">TAGGED</span>
@@ -163,49 +261,146 @@
         <div class="photos">
           <div class="photos__row">
             <article>
-              <img src="assets/najbolja-slika.png" alt="photo" class="photo" />
+              <label class="modal__photo" for="modal__checkbox">
+                <img
+                  src="assets/najbolja-slika.png"
+                  alt="photo"
+                  class="photo"
+                />
+              </label>
+              <div class="hover__container">
+                <span class="hover__like">
+                  <img src="assets/likes.png" alt="likes" class="hover__img" />
+                  54
+                </span>
+                <span class="hover__comment">
+                  <img
+                    src="assets/comments.png"
+                    alt="comments"
+                    class="hover__img"
+                  />
+                  12
+                </span>
+              </div>
+            </article>
+
+            <article>
+              <label class="modal__photo" for="modal__checkbox">
+                <img
+                  src="assets/najbolja-slika.png"
+                  alt="photo"
+                  class="photo"
+                />
+              </label>
+              <div class="hover__container">
+                <span class="hover__like">
+                  <img src="assets/likes.png" alt="likes" class="hover__img" />
+                  28
+                </span>
+                <span class="hover__comment">
+                  <img
+                    src="assets/comments.png"
+                    alt="comments"
+                    class="hover__img"
+                  />
+                  5
+                </span>
+              </div>
             </article>
             <article>
-              <img src="assets/najbolja-slika.png" alt="photo" class="photo" />
-            </article>
-            <article>
-              <img src="assets/najbolja-slika.png" alt="photo" class="photo" />
+              <label class="modal__photo" for="modal__checkbox">
+                <img
+                  src="assets/najbolja-slika.png"
+                  alt="photo"
+                  class="photo"
+                />
+              </label>
+              <div class="hover__container">
+                <span class="hover__like">
+                  <img src="assets/likes.png" alt="likes" class="hover__img" />
+                  70
+                </span>
+                <span class="hover__comment">
+                  <img
+                    src="assets/comments.png"
+                    alt="comments"
+                    class="hover__img"
+                  />
+                  10
+                </span>
+              </div>
             </article>
           </div>
 
           <div class="photos__row">
             <article>
-              <img src="assets/najbolja-slika.png" alt="photo" class="photo" />
+              <label class="modal__photo" for="modal__checkbox">
+                <img
+                  src="assets/najbolja-slika.png"
+                  alt="photo"
+                  class="photo"
+                />
+              </label>
+              <div class="hover__container">
+                <span class="hover__like">
+                  <img src="assets/likes.png" alt="likes" class="hover__img" />
+                  65
+                </span>
+                <span class="hover__comment">
+                  <img
+                    src="assets/comments.png"
+                    alt="comments"
+                    class="hover__img"
+                  />
+                  2
+                </span>
+              </div>
             </article>
             <article>
-              <img src="assets/najbolja-slika.png" alt="photo" class="photo" />
+              <label class="modal__photo" for="modal__checkbox">
+                <img
+                  src="assets/najbolja-slika.png"
+                  alt="photo"
+                  class="photo"
+                />
+              </label>
+              <div class="hover__container">
+                <span class="hover__like">
+                  <img src="assets/likes.png" alt="likes" class="hover__img" />
+                  78
+                </span>
+                <span class="hover__comment">
+                  <img
+                    src="assets/comments.png"
+                    alt="comments"
+                    class="hover__img"
+                  />
+                  3
+                </span>
+              </div>
             </article>
             <article>
-              <img src="assets/najbolja-slika.png" alt="photo" class="photo" />
-            </article>
-          </div>
-
-          <div class="photos__row">
-            <article>
-              <img src="assets/najbolja-slika.png" alt="photo" class="photo" />
-            </article>
-            <article>
-              <img src="assets/najbolja-slika.png" alt="photo" class="photo" />
-            </article>
-            <article>
-              <img src="assets/najbolja-slika.png" alt="photo" class="photo" />
-            </article>
-          </div>
-
-          <div class="photos__row">
-            <article>
-              <img src="assets/najbolja-slika.png" alt="photo" class="photo" />
-            </article>
-            <article>
-              <img src="assets/najbolja-slika.png" alt="photo" class="photo" />
-            </article>
-            <article>
-              <img src="assets/najbolja-slika.png" alt="photo" class="photo" />
+              <label class="modal__photo" for="modal__checkbox">
+                <img
+                  src="assets/najbolja-slika.png"
+                  alt="photo"
+                  class="photo"
+                />
+              </label>
+              <div class="hover__container">
+                <span class="hover__like">
+                  <img src="assets/likes.png" alt="likes" class="hover__img" />
+                  53
+                </span>
+                <span class="hover__comment">
+                  <img
+                    src="assets/comments.png"
+                    alt="comments"
+                    class="hover__img"
+                  />
+                  1
+                </span>
+              </div>
             </article>
           </div>
         </div>
