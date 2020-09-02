@@ -86,103 +86,469 @@
     </header>
 
     <main>
+      <!-- MODAL-->
       <div class="modal">
-        <input type="checkbox" id="box__1" name="modal__checkbox" />
+        <input type="checkbox" class="modal__checkbox" id="box__1" />
+        <input type="checkbox" class="modal__checkbox" id="box__2" />
+        <input type="checkbox" class="modal__checkbox" id="box__3" />
+        <input type="checkbox" class="modal__checkbox" id="box__4" />
+        <input type="checkbox" class="modal__checkbox" id="box__5" />
+        <input type="checkbox" class="modal__checkbox" id="box__6" />
         <span class="modal__x x__1">
           <label for="box__1">
             <img src="assets/button-x.png" alt="" />
           </label>
         </span>
-        <label for="box__1" class="modal__page page__1">
-          <div class="modal__page__color"></div>
-        </label>
+
         <div class="open__photo open__1">
-          <img
-            src="assets/najbolja-slika.png"
-            alt="photo"
-            class="modal__open__photo"
-          />
-          <div class="modal__right">
-            <div class="modal__right__top">
-              <ul class="modal__list">
-                <li class="modal__picture__ratio">
-                  <img src="assets/dump_logo.jpg" alt="profile_picture" />
-                </li>
-                <li>dumpovci •</li>
-                <li>
-                  <button>Follow</button>
-                </li>
-              </ul>
-              <p>
-                Bila nam je iznimna čast sudjelovati na
-                <a href="#">@bug.hr</a> Future Show 2019 kao gosti na panelu pod
-                nazivom Ostati ili otići - developerska dilema u eri migracija .
-                DUMP je predstavljao naš <a href="#">@matej_rajcic</a> .
-                Atmosfera je bila odlična, a više dojmova uskoro😁
-                <br />
-                .
-                <br />
-                .
-                <br />
-                .
-                <br />
-                <a href="#">#bug</a>
-                <a href="#">#bughr</a>
-                <a href="#">#bugfutureshow</a>
-                <a href="#">#2k19</a>
-                <a href="#">#conference</a>
-                <a href="#">#panel</a>
-                <a href="#">#speaker</a>
-                <a href="#">#konferencija</a>
-                <a href="#">#technology</a>
-                <a href="#">#tech</a>
-                <a href="#">#tehnologija</a>
-                <a href="#">#developer</a>
-                <a href="#">#developers</a>
-                <a href="#">#programiranje</a>
-                <a href="#">#DUMP</a>
-                <a href="#">#udruga</a>
-                <a href="#">#programeri</a>
-                <a href="#">#zajednica</a>
-                <a href="#">#bfs2019</a>
-              </p>
-            </div>
-            <div class="modal__right__bottom">
-              <div class="modal__info">
-                <div class="modal__buttons">
-                  <div class="modal__buttons__left">
-                    <img src="assets/heart.png" alt="" />
-                    <img src="assets/comment.png" alt="" />
-                    <img src="assets/share_valjda.png" alt="" />
+          <!-- CAROUSEL 1.IMG-->
+          <div class="carousel__1">
+            <input type="checkbox" id="next__1" />
+            <input type="checkbox" id="next__2" />
+            <input type="checkbox" id="next__3" />
+            <input type="checkbox" id="next__4" />
+            <input type="checkbox" id="next__5" />
+            <input type="checkbox" id="next__6" />
+
+            <div class="c-1-1">
+              <img
+                src="assets/najbolja-slika.png"
+                alt="photo"
+                class="modal__open__photo"
+              />
+              <div class="modal__right">
+                <div class="modal__right__top">
+                  <ul class="modal__list">
+                    <li class="modal__picture__ratio">
+                      <img src="assets/dump_logo.jpg" alt="profile_picture" />
+                    </li>
+                    <li>dumpovci •</li>
+                    <li>
+                      <button>Follow</button>
+                    </li>
+                  </ul>
+                  <p>
+                    Bila nam je iznimna čast sudjelovati na
+                    <a href="#">@bug.hr</a> Future Show 2019 kao gosti na panelu
+                    pod nazivom Ostati ili otići - developerska dilema u eri
+                    migracija . DUMP je predstavljao naš
+                    <a href="#">@matej_rajcic</a> . Atmosfera je bila odlična, a
+                    više dojmova uskoro😁
+                    <br />
+                    .
+                    <br />
+                    .
+                    <br />
+                    .
+                    <br />
+                    <a href="#">#bug</a>
+                    <a href="#">#bughr</a>
+                    <a href="#">#bugfutureshow</a>
+                    <a href="#">#2k19</a>
+                    <a href="#">#conference</a>
+                    <a href="#">#panel</a>
+                    <a href="#">#speaker</a>
+                    <a href="#">#konferencija</a>
+                    <a href="#">#technology</a>
+                    <a href="#">#tech</a>
+                    <a href="#">#tehnologija</a>
+                    <a href="#">#developer</a>
+                    <a href="#">#developers</a>
+                    <a href="#">#programiranje</a>
+                    <a href="#">#DUMP</a>
+                    <a href="#">#udruga</a>
+                    <a href="#">#programeri</a>
+                    <a href="#">#zajednica</a>
+                    <a href="#">#bfs2019</a>
+                  </p>
+                </div>
+                <div class="modal__right__bottom">
+                  <div class="modal__info">
+                    <div class="modal__buttons">
+                      <div class="modal__buttons__left">
+                        <img src="assets/heart.png" alt="" />
+                        <img src="assets/comment.png" alt="" />
+                        <img src="assets/share_valjda.png" alt="" />
+                      </div>
+                      <div class="modal__buttons__right">
+                        <img src="assets/bookmark.png" alt="" />
+                      </div>
+                    </div>
+                    <span class="modal__likes">86 Likes</span>
+                    <span class="modal__date">FEBRUARY 8</span>
                   </div>
-                  <div class="modal__buttons__right">
-                    <img src="assets/bookmark.png" alt="" />
+                  <div class="modal__login">
+                    <span class="modal__login__text">
+                      <a href="https://www.instagram.com/accounts/login/"
+                        >Log in
+                      </a>
+                      to like or comment.</span
+                    >
                   </div>
                 </div>
-                <span class="modal__likes">86 Likes</span>
-                <span class="modal__date">FEBRUARY 8</span>
-              </div>
-              <div class="modal__login">
-                <span class="modal__login__text">
-                  <a href="https://www.instagram.com/accounts/login/"
-                    >Log in
-                  </a>
-                  to like or comment.</span
-                >
               </div>
             </div>
+
+            <span class="next__photo next__2">
+              <label for="next__2">
+                <img src="assets/right-arrow.png" alt="next" />
+              </label>
+            </span>
+
+            <div class="c-1-2">
+              <img
+                src="assets/slika2.jpg"
+                alt="photo"
+                class="modal__open__photo"
+              />
+              <div class="modal__right">
+                <div class="modal__right__top">
+                  <ul class="modal__list">
+                    <li class="modal__picture__ratio">
+                      <img src="assets/dump_logo.jpg" alt="profile_picture" />
+                    </li>
+                    <li>dumpovci •</li>
+                    <li>
+                      <button>Follow</button>
+                    </li>
+                  </ul>
+                  <p>
+                    Ovim putem bismo željeli čestitati Srdjanu Podrugu, počasnom
+                    članu naše Udruge, na novom mandatu u ulozi dekana FESB-a!
+                    👏 Mnogi fesbovci znaju kako je on već bio dekan u dva
+                    mandata i za njega imaju samo riječi hvale. Uvijek je
+                    stavljao fokus na suradnju fakulteta sa studentima i imao
+                    pozitivan utjecaj na rad studentskih udruga. Jedan od većih
+                    projekata naše Udruge, rad na FESB-ovim sustavima, ostvaren
+                    je upravo za vrijeme kada je Srdjan Podrug bio dekan, a
+                    također smo mu zahvalni što nam je omogućen rad u
+                    prostorijama fakulteta.
+                  </p>
+                </div>
+                <div class="modal__right__bottom">
+                  <div class="modal__info">
+                    <div class="modal__buttons">
+                      <div class="modal__buttons__left">
+                        <img src="assets/heart.png" alt="" />
+                        <img src="assets/comment.png" alt="" />
+                        <img src="assets/share_valjda.png" alt="" />
+                      </div>
+                      <div class="modal__buttons__right">
+                        <img src="assets/bookmark.png" alt="" />
+                      </div>
+                    </div>
+                    <span class="modal__likes">28 Likes</span>
+                    <span class="modal__date">JANUARY 13</span>
+                  </div>
+                  <div class="modal__login">
+                    <span class="modal__login__text">
+                      <a href="https://www.instagram.com/accounts/login/"
+                        >Log in
+                      </a>
+                      to like or comment.</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <span class="next__photo next__3">
+              <label for="next__3">
+                <img src="assets/right-arrow.png" alt="next" />
+              </label>
+            </span>
+
+            <span class="previous__photo previous__1">
+              <label for="next__2">
+                <img src="assets/left-arrow.png" alt="previous" />
+              </label>
+            </span>
+
+            <div class="c-1-3">
+              <img
+                src="assets/slika3.png"
+                alt="photo"
+                class="modal__open__photo"
+              />
+              <div class="modal__right">
+                <div class="modal__right__top">
+                  <ul class="modal__list">
+                    <li class="modal__picture__ratio">
+                      <img src="assets/dump_logo.jpg" alt="profile_picture" />
+                    </li>
+                    <li>dumpovci •</li>
+                    <li>
+                      <button>Follow</button>
+                    </li>
+                  </ul>
+                  <p>
+                    Još je ostao samo jedan dan do završetka prijava! Postani
+                    dio naše ekipe i prijavi se na DUMP Internship. Link u opisu
+                    profila. 😉...
+                    <a href="#">#DUMP</a>
+                    <a href="#">#internship</a>
+                    <a href="#">#dumpovci</a>
+                    <a href="#">#intern</a>
+                    <a href="#">#pripravnistvo</a>
+                    <a href="#">#prijave</a>
+                    <a href="#">#blesplatno</a>
+                    <a href="#">#prijavise</a>
+                    <a href="#">#pozuri</a>
+                    <a href="#">#jedandan</a>
+                    <a href="#">#fesb</a>
+                    <a href="#">#split</a>
+                    <a href="#">#udruga</a>
+                    <a href="#">#podrucja</a>
+                  </p>
+                </div>
+                <div class="modal__right__bottom">
+                  <div class="modal__info">
+                    <div class="modal__buttons">
+                      <div class="modal__buttons__left">
+                        <img src="assets/heart.png" alt="" />
+                        <img src="assets/comment.png" alt="" />
+                        <img src="assets/share_valjda.png" alt="" />
+                      </div>
+                      <div class="modal__buttons__right">
+                        <img src="assets/bookmark.png" alt="" />
+                      </div>
+                    </div>
+                    <span class="modal__likes">70 Likes</span>
+                    <span class="modal__date">DECEMBER 10, 2019</span>
+                  </div>
+                  <div class="modal__login">
+                    <span class="modal__login__text">
+                      <a href="https://www.instagram.com/accounts/login/"
+                        >Log in
+                      </a>
+                      to like or comment.</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <span class="next__photo next__4">
+              <label for="next__4">
+                <img src="assets/right-arrow.png" alt="next" />
+              </label>
+            </span>
+
+            <span class="previous__photo previous__2">
+              <label for="next__3">
+                <img src="assets/left-arrow.png" alt="previous" />
+              </label>
+            </span>
+
+            <div class="c-1-4">
+              <img
+                src="assets/slika4.jpg"
+                alt="photo"
+                class="modal__open__photo"
+              />
+              <div class="modal__right">
+                <div class="modal__right__top">
+                  <ul class="modal__list">
+                    <li class="modal__picture__ratio">
+                      <img src="assets/dump_logo.jpg" alt="profile_picture" />
+                    </li>
+                    <li>dumpovci •</li>
+                    <li>
+                      <button>Follow</button>
+                    </li>
+                  </ul>
+                  <p>
+                    Danas se u shopping centru Mall of Split održava
+                    motivacijska konferencija za mlade u organizaciji
+                    @split_techcity pod sloganom "Živi lokalno, radi globalno!",
+                    a mi se možemo pohvaliti da smo partner konferencije. 😀
+                    Dođi i poslušaj panel raspravu te motivacijske govore
+                    uspješnih poduzetnika koji su svoje znanje, vještine,
+                    vrijeme i trud uložili u osobni i profesionalni razvoj
+                    unutar Lijepe naše!
+                    <br />
+                    .
+                    <br />
+                    .
+                    <br />
+                    .
+                    <br />
+                    <a href="#">#dumpovci</a>
+                    <a href="#">#DUMP</a>
+                    <a href="#">#splittechcity</a>
+                    <a href="#">#konferencija</a>
+                    <a href="#">#motivacijskakonferencija</a>
+                    <a href="#">#živilokalnoradiglobalno</a>
+                  </p>
+                </div>
+                <div class="modal__right__bottom">
+                  <div class="modal__info">
+                    <div class="modal__buttons">
+                      <div class="modal__buttons__left">
+                        <img src="assets/heart.png" alt="" />
+                        <img src="assets/comment.png" alt="" />
+                        <img src="assets/share_valjda.png" alt="" />
+                      </div>
+                      <div class="modal__buttons__right">
+                        <img src="assets/bookmark.png" alt="" />
+                      </div>
+                    </div>
+                    <span class="modal__likes">65 Likes</span>
+                    <span class="modal__date">NOVEMBER 28, 2019</span>
+                  </div>
+                  <div class="modal__login">
+                    <span class="modal__login__text">
+                      <a href="https://www.instagram.com/accounts/login/"
+                        >Log in
+                      </a>
+                      to like or comment.</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <span class="next__photo next__5">
+              <label for="next__5">
+                <img src="assets/right-arrow.png" alt="next" />
+              </label>
+            </span>
+
+            <span class="previous__photo previous__3">
+              <label for="next__4">
+                <img src="assets/left-arrow.png" alt="previous" />
+              </label>
+            </span>
+
+            <div class="c-1-5">
+              <img
+                src="assets/slika5.jpg"
+                alt="photo"
+                class="modal__open__photo"
+              />
+              <div class="modal__right">
+                <div class="modal__right__top">
+                  <ul class="modal__list">
+                    <li class="modal__picture__ratio">
+                      <img src="assets/dump_logo.jpg" alt="profile_picture" />
+                    </li>
+                    <li>dumpovci •</li>
+                    <li>
+                      <button>Follow</button>
+                    </li>
+                  </ul>
+                  <p>
+                    U moru loših vijesti, osvrnimo se i na one pozitivne! 🌞
+                    Udružili smo snage sa @split_techcity i organizirali dvije
+                    radionice za najmlađe. 💻 Učili smo ih osnovama HTML-a i
+                    CSS-a te se odlično zabavili. 📚 Za nešto više o samom
+                    događaju pročitajte članak u opisu našeg profila.
+                  </p>
+                </div>
+                <div class="modal__right__bottom">
+                  <div class="modal__info">
+                    <div class="modal__buttons">
+                      <div class="modal__buttons__left">
+                        <img src="assets/heart.png" alt="" />
+                        <img src="assets/comment.png" alt="" />
+                        <img src="assets/share_valjda.png" alt="" />
+                      </div>
+                      <div class="modal__buttons__right">
+                        <img src="assets/bookmark.png" alt="" />
+                      </div>
+                    </div>
+                    <span class="modal__likes">78 Likes</span>
+                    <span class="modal__date">AUGUST 5, 2019</span>
+                  </div>
+                  <div class="modal__login">
+                    <span class="modal__login__text">
+                      <a href="https://www.instagram.com/accounts/login/"
+                        >Log in
+                      </a>
+                      to like or comment.</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <span class="next__photo next__6">
+              <label for="next__6">
+                <img src="assets/right-arrow.png" alt="next" />
+              </label>
+            </span>
+
+            <span class="previous__photo previous__4">
+              <label for="next__5">
+                <img src="assets/left-arrow.png" alt="previous" />
+              </label>
+            </span>
+
+            <div class="c-1-6">
+              <img
+                src="assets/slika6.png"
+                alt="photo"
+                class="modal__open__photo"
+              />
+              <div class="modal__right">
+                <div class="modal__right__top">
+                  <ul class="modal__list">
+                    <li class="modal__picture__ratio">
+                      <img src="assets/dump_logo.jpg" alt="profile_picture" />
+                    </li>
+                    <li>dumpovci •</li>
+                    <li>
+                      <button>Follow</button>
+                    </li>
+                  </ul>
+                  <p>
+                    📣 Ljubitelj si digitalnog marketinga? Ako te zanima kako
+                    započeti karijeru onda si na pravom mjestu jer smo ove
+                    godine pripremili predavanje Osnove digitalnog marketinga za
+                    sve marketingaše! Pridruži nam se 07.03. na FESB-u! 📣
+                  </p>
+                </div>
+
+                <div class="modal__right__bottom">
+                  <div class="modal__info">
+                    <div class="modal__buttons">
+                      <div class="modal__buttons__left">
+                        <img src="assets/heart.png" alt="" />
+                        <img src="assets/comment.png" alt="" />
+                        <img src="assets/share_valjda.png" alt="" />
+                      </div>
+                      <div class="modal__buttons__right">
+                        <img src="assets/bookmark.png" alt="" />
+                      </div>
+                    </div>
+                    <span class="modal__likes">53 Likes</span>
+                    <span class="modal__date">FEBRUARY 1, 2019.</span>
+                  </div>
+                  <div class="modal__login">
+                    <span class="modal__login__text">
+                      <a href="https://www.instagram.com/accounts/login/"
+                        >Log in
+                      </a>
+                      to like or comment.</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <span class="previous__photo previous__5">
+              <label for="next__6">
+                <img src="assets/left-arrow.png" alt="previous" />
+              </label>
+            </span>
           </div>
         </div>
-
-        <input type="checkbox" id="box__2" name="modal__checkbox" />
+        <!--MODAL-->
         <span class="modal__x x__2">
           <label for="box__2">
             <img src="assets/button-x.png" alt="" />
           </label>
         </span>
-        <label for="box__2" class="modal__page page__2">
-          <div class="modal__page__color"></div>
-        </label>
         <div class="open__photo open__2">
           <img src="assets/slika2.jpg" alt="photo" class="modal__open__photo" />
           <div class="modal__right">
@@ -235,15 +601,11 @@
           </div>
         </div>
 
-        <input type="checkbox" id="box__3" name="modal__checkbox" />
         <span class="modal__x x__3">
           <label for="box__3">
             <img src="assets/button-x.png" alt="" />
           </label>
         </span>
-        <label for="box__3" class="modal__page page__3">
-          <div class="modal__page__color"></div>
-        </label>
         <div class="open__photo open__3">
           <img src="assets/slika3.png" alt="photo" class="modal__open__photo" />
           <div class="modal__right">
@@ -304,15 +666,11 @@
           </div>
         </div>
 
-        <input type="checkbox" id="box__4" name="modal__checkbox" />
         <span class="modal__x x__4">
           <label for="box__4">
             <img src="assets/button-x.png" alt="" />
           </label>
         </span>
-        <label for="box__4" class="modal__page page__4">
-          <div class="modal__page__color"></div>
-        </label>
         <div class="open__photo open__4">
           <img src="assets/slika4.jpg" alt="photo" class="modal__open__photo" />
           <div class="modal__right">
@@ -333,8 +691,8 @@
                 pohvaliti da smo partner konferencije. 😀 Dođi i poslušaj panel
                 raspravu te motivacijske govore uspješnih poduzetnika koji su
                 svoje znanje, vještine, vrijeme i trud uložili u osobni i
-								profesionalni razvoj unutar Lijepe naše!
-								<br />
+                profesionalni razvoj unutar Lijepe naše!
+                <br />
                 .
                 <br />
                 .
@@ -376,15 +734,11 @@
           </div>
         </div>
 
-        <input type="checkbox" id="box__5" name="modal__checkbox" />
         <span class="modal__x x__5">
           <label for="box__5">
             <img src="assets/button-x.png" alt="" />
           </label>
         </span>
-        <label for="box__5" class="modal__page page__5">
-          <div class="modal__page__color"></div>
-        </label>
         <div class="open__photo open__5">
           <img src="assets/slika5.jpg" alt="photo" class="modal__open__photo" />
           <div class="modal__right">
@@ -433,15 +787,11 @@
           </div>
         </div>
 
-        <input type="checkbox" id="box__6" name="modal__checkbox" />
         <span class="modal__x x__6">
           <label for="box__6">
             <img src="assets/button-x.png" alt="" />
           </label>
         </span>
-        <label for="box__6" class="modal__page page__6">
-          <div class="modal__page__color"></div>
-        </label>
         <div class="open__photo open__6">
           <img src="assets/slika6.png" alt="photo" class="modal__open__photo" />
           <div class="modal__right">
@@ -460,7 +810,9 @@
                 započeti karijeru onda si na pravom mjestu jer smo ove godine
                 pripremili predavanje Osnove digitalnog marketinga za sve
                 marketingaše! Pridruži nam se 07.03. na FESB-u! 📣
+              </p>
             </div>
+
             <div class="modal__right__bottom">
               <div class="modal__info">
                 <div class="modal__buttons">
@@ -487,8 +839,11 @@
             </div>
           </div>
         </div>
+
+        <div class="modal__page"></div>
       </div>
 
+      <!-- PROFIL-->
       <div class="profile">
         <div class="profile__picture__container">
           <div class="profile__picture__ratio">
@@ -514,7 +869,7 @@
                 href="https://www.instagram.com/accounts/login/?next=%2Fdumpovci%2F&source=profile_posts"
                 class="profile__info__link"
               >
-                <h2 class="info__number">225</h2>
+                <h2>225</h2>
                 <span class="info__title">posts</span>
               </a>
             </li>
@@ -523,7 +878,7 @@
                 href="https://www.instagram.com/accounts/login/?next=%2Fdumpovci%2Ffollowers%2F&source=followed_by_list"
                 class="profile__info__link"
               >
-                <h2 class="info__number">1,012</h2>
+                <h2>1,012</h2>
                 <span class="info__title">followers</span>
               </a>
             </li>
@@ -532,7 +887,7 @@
                 href="https://www.instagram.com/accounts/login/?next=%2Fdumpovci%2Ffollowing%2F&source=follows_list"
                 class="profile__info__link"
               >
-                <h2 class="info__number">144</h2>
+                <h2>144</h2>
                 <span class="info__title">following</span>
               </a>
             </li>

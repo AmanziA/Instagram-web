@@ -232,7 +232,19 @@ button:focus {
   width: 100%;
 }
 
-#checkbox__x {
+#checkbox__x,
+#box__1,
+#box__2,
+#box__3,
+#box__4,
+#box__5,
+#box__6,
+#next__1,
+#next__2,
+#next__3,
+#next__4,
+#next__5,
+#next__6 {
   position: absolute;
   top: -100%;
   opacity: 0;
@@ -255,6 +267,8 @@ main {
   box-sizing: border-box;
   overflow: hidden;
 }
+
+/* PROFIL*/
 
 .profile {
   display: flex;
@@ -452,6 +466,8 @@ article {
   opacity: 100%;
 }
 
+/* MODAL */
+
 .modal {
   overflow: hidden;
   position: absolute;
@@ -461,12 +477,6 @@ article {
   top: 0;
 }
 
-#modal__checkbox {
-  opacity: 0;
-  position: absolute;
-  top: -100%;
-}
-
 .modal__x {
   height: 20px;
   width: 20px;
@@ -474,25 +484,13 @@ article {
   right: 1%;
   top: 1%;
   z-index: 3;
-  transform: translateX(calc(200vw));
+  transform: translateX(200vw);
 }
 
 .modal__x img {
   height: 100%;
   width: 100%;
   filter: brightness(2);
-}
-
-.modal__page {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  opacity: 40%;
-  top: 0;
-  left: 0;
-  background-color: #000000;
-  transform: translateX(calc(200vw));
-  z-index: 2;
 }
 
 .open__photo {
@@ -503,14 +501,13 @@ article {
   top: calc(8vh);
   opacity: 100%;
   transform: translateX(calc(200vw));
-  z-index: 2;
+  z-index: 3;
   left: calc((100% - 935px) / 2);
   display: flex;
 }
 
 .modal__open__photo {
   width: calc(100% / 3 * 2);
-  height: 100%;
   object-fit: cover;
 }
 
@@ -562,10 +559,10 @@ article {
 
 .modal__right p {
   padding: 18px 0;
-	line-height: initial;
-	overflow: auto;
-    height: 336px;
-    width: 100%;
+  line-height: initial;
+  overflow: auto;
+  height: 336px;
+  width: 100%;
 }
 
 .modal__right a {
@@ -588,11 +585,11 @@ article {
 
 .modal__buttons__left img {
   margin-right: 6px;
-  height: 30px;
-  width: 30px;
 }
 
+.modal__buttons__left img,
 .modal__buttons__right {
+  margin-right: 6px;
   height: 30px;
   width: 30px;
 }
@@ -615,88 +612,128 @@ article {
   color: #989898;
 }
 
-#box__1:checked ~ .x__1 {
+.modal__checkbox:checked ~ .modal__page {
   transform: translateX(0);
 }
 
-#box__1:checked ~ .page__1 {
-  transform: translateX(0);
-}
-
-#box__1:checked ~ .open__1 {
-  transform: translateX(0);
-}
-
-#box__2:checked ~ .x__2 {
-  transform: translateX(0);
-}
-
-#box__2:checked ~ .page__2 {
-  transform: translateX(0);
-}
-
-#box__2:checked ~ .open__2 {
-  transform: translateX(0);
-}
-
-#box__3:checked ~ .x__3 {
-  transform: translateX(0);
-}
-
-#box__3:checked ~ .page__3 {
-  transform: translateX(0);
-}
-
-#box__3:checked ~ .open__3 {
-  transform: translateX(0);
-}
-
-#box__4:checked ~ .x__4 {
-  transform: translateX(0);
-}
-
-#box__4:checked ~ .page__4 {
-  transform: translateX(0);
-}
-
-#box__4:checked ~ .open__4 {
-  transform: translateX(0);
-}
-
-#box__5:checked ~ .x__5 {
-  transform: translateX(0);
-}
-
-#box__5:checked ~ .page__5 {
-  transform: translateX(0);
-}
-
-#box__5:checked ~ .open__5 {
-  transform: translateX(0);
-}
-
-#box__6:checked ~ .x__6 {
-  transform: translateX(0);
-}
-
-#box__6:checked ~ .page__6 {
-  transform: translateX(0);
-}
-
+#box__1:checked ~ .x__1,
+#box__1:checked ~ .open__1,
+#box__2:checked ~ .x__2,
+#box__2:checked ~ .open__2,
+#box__3:checked ~ .x__3,
+#box__3:checked ~ .open__3,
+#box__4:checked ~ .x__4,
+#box__4:checked ~ .open__4,
+#box__5:checked ~ .x__5,
+#box__5:checked ~ .open__5,
+#box__6:checked ~ .x__6,
 #box__6:checked ~ .open__6 {
   transform: translateX(0);
 }
 
+.modal__page {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 40%;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  transform: translateX(calc(200vw));
+  z-index: 2;
+}
+
+/* CAROUSEL 1.IMG*/
+
+.c-1-1,
+.c-1-2,
+.c-1-3,
+.c-1-4,
+.c-1-5,
+.c-1-6 {
+  background-color: #ffffff;
+  display: flex;
+  position: absolute;
+  height: 100%;
+}
+
+.next__photo,
+.previous__photo {
+  height: 26px;
+  width: 16px;
+  position: absolute;
+  bottom: 50%;
+  z-index: 3;
+  filter: brightness(0.9);
+  transform: translateX(200vw);
+}
+
+.next__2 {
+  transform: translateX(0);
+}
+
+.next__photo img,
+.previous__photo img {
+  height: 100%;
+  width: 100%;
+}
+
+.previous__photo {
+  right: calc(100% + 20px);
+}
+
+.next__photo {
+  left: calc(100% + 20px);
+}
+
+.next__photo img:active,
+.previous__photo img:active {
+  filter: brightness(0.5);
+  transition: ease-in-out;
+}
+
+.c-1-2,
+.c-1-3,
+.c-1-4,
+.c-1-5,
+.c-1-6 {
+  transform: translateX(200vw);
+}
+
+#next__2:checked ~ .c-1-2,
+#next__2:checked ~ .next__3,
+#next__2:checked ~ .previous__1,
+#next__3:checked ~ .c-1-3,
+#next__3:checked ~ .next__4,
+#next__3:checked ~ .previous__2,
+#next__4:checked ~ .c-1-4,
+#next__4:checked ~ .next__5,
+#next__4:checked ~ .previous__3,
+#next__5:checked ~ .c-1-5,
+#next__5:checked ~ .next__6,
+#next__5:checked ~ .previous__4,
+#next__6:checked ~ .c-1-6,
+#next__6:checked ~ .previous__5 {
+  transform: translateX(0);
+}
+
+#next__2:checked ~ .next__2,
+#next__3:checked ~ .next__3,
+#next__3:checked ~ .previous__1,
+#next__4:checked ~ .next__4,
+#next__4:checked ~ .previous__2,
+#next__5:checked ~ .next__5,
+#next__5:checked ~ .previous__3,
+#next__6:checked ~ .next__6,
+#next__6:checked ~ .previous__4 {
+  transform: translateX(200vw);
+}
+
 @media screen and (max-width: 767px) {
-  .logo {
-    display: none;
-  }
-
-  .searchbar__container {
-    display: none;
-  }
-
-  .bottom__logo__ratio {
+  .logo,
+  .searchbar__container,
+  .bottom__logo__ratio,
+  .photos__menu__text {
     display: none;
   }
 
@@ -717,8 +754,8 @@ article {
   }
 
   .button__x {
-		top: 79vh;
-		right: 3vw;
+    top: 79vh;
+    right: 3vw;
   }
 
   main {
@@ -810,10 +847,6 @@ article {
     filter: none;
   }
 
-  .photos__menu__text {
-    display: none;
-  }
-
   .photos__row {
     margin-bottom: 6px;
   }
@@ -837,16 +870,19 @@ article {
     top: calc(16vh);
   }
 
-  .modal__open__photo {
-    width: calc(100% / 2);
-  }
-
+  .modal__open__photo,
   .modal__right {
     width: calc(100% / 2);
   }
+
   .modal__right__top p {
     height: 180px;
     overflow: auto;
+  }
+
+  .previous__photo,
+  .next__photo {
+    display: none;
   }
 }
 
@@ -913,5 +949,9 @@ article {
 
   .modal__login {
     display: none;
+  }
+
+  .c-1-1 {
+    display: block;
   }
 }
