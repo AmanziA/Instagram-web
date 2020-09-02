@@ -13,7 +13,7 @@ nav {
   background-color: #ffffff;
   width: 100%;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
 }
 
 .nav-bar {
@@ -562,7 +562,10 @@ article {
 
 .modal__right p {
   padding: 18px 0;
-  line-height: initial;
+	line-height: initial;
+	overflow: auto;
+    height: 336px;
+    width: 100%;
 }
 
 .modal__right a {
@@ -612,15 +615,75 @@ article {
   color: #989898;
 }
 
-#modal__checkbox:checked ~ .modal__x {
+#box__1:checked ~ .x__1 {
   transform: translateX(0);
 }
 
-#modal__checkbox:checked ~ .modal__page {
+#box__1:checked ~ .page__1 {
   transform: translateX(0);
 }
 
-#modal__checkbox:checked ~ .open__photo {
+#box__1:checked ~ .open__1 {
+  transform: translateX(0);
+}
+
+#box__2:checked ~ .x__2 {
+  transform: translateX(0);
+}
+
+#box__2:checked ~ .page__2 {
+  transform: translateX(0);
+}
+
+#box__2:checked ~ .open__2 {
+  transform: translateX(0);
+}
+
+#box__3:checked ~ .x__3 {
+  transform: translateX(0);
+}
+
+#box__3:checked ~ .page__3 {
+  transform: translateX(0);
+}
+
+#box__3:checked ~ .open__3 {
+  transform: translateX(0);
+}
+
+#box__4:checked ~ .x__4 {
+  transform: translateX(0);
+}
+
+#box__4:checked ~ .page__4 {
+  transform: translateX(0);
+}
+
+#box__4:checked ~ .open__4 {
+  transform: translateX(0);
+}
+
+#box__5:checked ~ .x__5 {
+  transform: translateX(0);
+}
+
+#box__5:checked ~ .page__5 {
+  transform: translateX(0);
+}
+
+#box__5:checked ~ .open__5 {
+  transform: translateX(0);
+}
+
+#box__6:checked ~ .x__6 {
+  transform: translateX(0);
+}
+
+#box__6:checked ~ .page__6 {
+  transform: translateX(0);
+}
+
+#box__6:checked ~ .open__6 {
   transform: translateX(0);
 }
 
@@ -653,12 +716,9 @@ article {
     margin-bottom: 10px;
   }
 
-  .checkbox__x {
-    top: 80vh;
-  }
-
   .button__x {
-    top: 80vh;
+		top: 79vh;
+		right: 3vw;
   }
 
   main {
