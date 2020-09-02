@@ -47,7 +47,7 @@
         </div>
 
         <div class="bottom__log">
-          <input type="checkbox" class="checkbox__x" />
+          <input type="checkbox" id="checkbox__x" />
           <div class="bottom__log__position">
             <div class="bottom__log__container">
               <div class="bottom__container__left">
@@ -76,8 +76,11 @@
               </div>
             </div>
           </div>
-
-          <button class="button__x"></button>
+          <span class="button__x">
+            <label for="checkbox__x">
+              <img src="assets/button-x.png" alt="" />
+            </label>
+          </span>
         </div>
       </nav>
     </header>
@@ -85,13 +88,14 @@
     <main>
       <div class="modal">
         <input type="checkbox" id="modal__checkbox" name="modal__checkbox" />
-        <input type="checkbox" name="x-close" id="modal__checkbox__close" />
         <span class="modal__x">
-          <label for="modal__checkbox__close">
+          <label for="modal__checkbox">
             <img src="assets/button-x.png" alt="" />
           </label>
         </span>
-        <div class="modal__page"></div>
+        <label for="modal__checkbox" class="modal__page">
+          <div class="modal__page__color"></div>
+        </label>
         <div class="open__photo">
           <img
             src="assets/najbolja-slika.png"
